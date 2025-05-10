@@ -1,4 +1,4 @@
-# NextJS Boilerplate
+# Dev Tools
 
 ## How to use
 
@@ -7,13 +7,13 @@ Clone this respository using terminal or bash.
 ### 1\. Clone this Repository
 
 ```bash
-git clone https://github.com/devSaadRaja/NextJS-boilerplate.git
+git clone https://github.com/devSaadRaja/dev-tools.git
 ```
 
 ### 2\. Navigate to the directory
 
 ```
-cd NextJS-boilerplate
+cd dev-tools
 ```
 
 ### 3\. Install dependencies

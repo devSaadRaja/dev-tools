@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-boilerplate",
+  "name": "dev-tools",
   "version": "1.0.0",
-  "description": "NextJS Boilerplate",
+  "description": "Dev Tools",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devSaadRaja/NextJS-boilerplate.git"
+    "url": "https://github.com/devSaadRaja/dev-tools.git"
   },
   "keywords": [
     "nextjs",
     "tailwindcss",
-    "boilerplate"
+    "tools"
   ],
   "author": "Saad Raja",
   "license": "ISC",
