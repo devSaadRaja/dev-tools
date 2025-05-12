@@ -2,11 +2,18 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { HexagonIcon, Menu, X, Github, Twitter } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Helper function to check if a link is active
+  const isActive = (path: string) => {
+    return pathname === path;
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-gray/10 backdrop-blur-lg">
@@ -22,31 +29,51 @@ export default function Header() {
         <nav className="hidden items-center gap-6 md:flex">
           <Link
             href="/tools"
-            className="font-urbanist text-silver transition-colors hover:text-snow"
+            className={`font-urbanist transition-colors hover:text-snow relative ${
+              isActive("/tools")
+                ? "text-snow after:absolute after:bottom-[-8px] after:left-0 after:h-[2px] after:w-full after:bg-royalBlue"
+                : "text-silver"
+            }`}
           >
             All Tools
           </Link>
           <Link
             href="/categories"
-            className="font-urbanist text-silver transition-colors hover:text-snow"
+            className={`font-urbanist transition-colors hover:text-snow relative ${
+              isActive("/categories")
+                ? "text-snow after:absolute after:bottom-[-8px] after:left-0 after:h-[2px] after:w-full after:bg-royalBlue"
+                : "text-silver"
+            }`}
           >
             Categories
           </Link>
           <Link
             href="/submit"
-            className="font-urbanist text-silver transition-colors hover:text-snow"
+            className={`font-urbanist transition-colors hover:text-snow relative ${
+              isActive("/submit")
+                ? "text-snow after:absolute after:bottom-[-8px] after:left-0 after:h-[2px] after:w-full after:bg-royalBlue"
+                : "text-silver"
+            }`}
           >
             Submit Tool
           </Link>
           <Link
             href="/roadmap"
-            className="font-urbanist text-silver transition-colors hover:text-snow"
+            className={`font-urbanist transition-colors hover:text-snow relative ${
+              isActive("/roadmap")
+                ? "text-snow after:absolute after:bottom-[-8px] after:left-0 after:h-[2px] after:w-full after:bg-royalBlue"
+                : "text-silver"
+            }`}
           >
             Roadmap
           </Link>
           <Link
             href="/about"
-            className="font-urbanist text-silver transition-colors hover:text-snow"
+            className={`font-urbanist transition-colors hover:text-snow relative ${
+              isActive("/about")
+                ? "text-snow after:absolute after:bottom-[-8px] after:left-0 after:h-[2px] after:w-full after:bg-royalBlue"
+                : "text-silver"
+            }`}
           >
             About
           </Link>
@@ -93,35 +120,55 @@ export default function Header() {
           <nav className="flex flex-col gap-4 bg-[#121212] rounded-lg p-4">
             <Link
               href="/tools"
-              className="rounded-lg p-3 font-urbanist text-lg text-silver hover:bg-slate-800 hover:text-snow"
+              className={`rounded-lg p-3 font-urbanist text-lg hover:bg-slate-800 hover:text-snow relative ${
+                isActive("/tools")
+                  ? "text-snow bg-slate-800/50 border-l-2 border-royalBlue"
+                  : "text-silver"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               All Tools
             </Link>
             <Link
               href="/categories"
-              className="rounded-lg p-3 font-urbanist text-lg text-silver hover:bg-slate-800 hover:text-snow"
+              className={`rounded-lg p-3 font-urbanist text-lg hover:bg-slate-800 hover:text-snow relative ${
+                isActive("/categories")
+                  ? "text-snow bg-slate-800/50 border-l-2 border-royalBlue"
+                  : "text-silver"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Categories
             </Link>
             <Link
               href="/submit"
-              className="rounded-lg p-3 font-urbanist text-lg text-silver hover:bg-slate-800 hover:text-snow"
+              className={`rounded-lg p-3 font-urbanist text-lg hover:bg-slate-800 hover:text-snow relative ${
+                isActive("/submit")
+                  ? "text-snow bg-slate-800/50 border-l-2 border-royalBlue"
+                  : "text-silver"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Submit Tool
             </Link>
             <Link
               href="/roadmap"
-              className="rounded-lg p-3 font-urbanist text-lg text-silver hover:bg-slate-800 hover:text-snow"
+              className={`rounded-lg p-3 font-urbanist text-lg hover:bg-slate-800 hover:text-snow relative ${
+                isActive("/roadmap")
+                  ? "text-snow bg-slate-800/50 border-l-2 border-royalBlue"
+                  : "text-silver"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Roadmap
             </Link>
             <Link
               href="/about"
-              className="rounded-lg p-3 font-urbanist text-lg text-silver hover:bg-slate-800 hover:text-snow"
+              className={`rounded-lg p-3 font-urbanist text-lg hover:bg-slate-800 hover:text-snow relative ${
+                isActive("/about")
+                  ? "text-snow bg-slate-800/50 border-l-2 border-royalBlue"
+                  : "text-silver"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               About
