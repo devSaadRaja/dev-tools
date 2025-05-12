@@ -1,13 +1,18 @@
-export interface PageProps {
-  params: {
-    slug: string;
-  };
-  searchParams: {};
+export interface Tool {
+  id: string;
+  name: string;
+  description: string;
+  url: string;
+  category: string;
+  tags: string[];
+  rating: number;
+  submittedBy?: string;
+  submittedDate?: string;
 }
 
-export type Token = {
-  image: string;
+export interface Category {
+  id: string;
   name: string;
-  progress: number;
-  link: string;
-};
+  description: string;
+  toolCount: number;
+}

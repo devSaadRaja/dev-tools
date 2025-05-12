@@ -19,12 +19,19 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        urbanist: ["var(--font-urbanist)"],
+        "source-code-pro": ["var(--font-source-code-pro)"],
+      },
       colors: {
-        royalBlue: "#4169E1",
-        electricPurple: "#BF00FF",
-        ghostWhite: "#F8F8FF",
-        sunsetOrange: "#FF4500",
+        // Custom colors based on project requirements
+        "royal-blue": "#4169E1",
+        silver: "#C0C0C0",
+        snow: "#FFFAFA",
+        "slate-gray": "#708090",
+        "slate-900": "#0f1219",
 
+        // ShadCN UI colors
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -58,10 +65,6 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-
-        dark: "#121212",
-        "dark-card": "#1E1E1E",
-        "dark-hover": "#2A2A2A",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -70,41 +73,15 @@ const config = {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
-        },
-        "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
-        },
-        "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

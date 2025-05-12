@@ -1,19 +1,25 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Source_Code_Pro, Urbanist } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 import WagmiConfig from "./WagmiConfig";
 import { Toaster } from "react-hot-toast";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const poppins = Poppins({
+const urbanist = Urbanist({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-primary",
+  variable: "--font-urbanist",
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
-const inter = Inter({
+
+const sourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
-  variable: "--font-secondary",
+  variable: "--font-source-code-pro",
+  weight: ["300", "400", "500", "600"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.variable} ${inter.variable}`}>
+      <body className={`${urbanist.variable} ${sourceCodePro.variable}`}>
         <WagmiConfig>
           <ThemeProvider attribute="class">
             <Toaster
@@ -52,7 +58,9 @@ export default function RootLayout({
               // }}
             />
 
+            <Header />
             <div>{children}</div>
+            <Footer />
           </ThemeProvider>
         </WagmiConfig>
       </body>
