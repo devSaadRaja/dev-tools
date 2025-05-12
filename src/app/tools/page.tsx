@@ -22,7 +22,7 @@ export default async function TopRatedPage({
     : 1;
 
   return (
-    <div className="container min-h-screen mx-auto px-4 py-8">
+    <div className="container min-h-screen mx-auto px-4 py-12">
       <div className="mb-12 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-royalBlue to-snow bg-clip-text text-transparent  font-urbanist">
           Developer Tools Directory

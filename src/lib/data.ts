@@ -29,7 +29,7 @@ export const featuredTools: Tool[] = [
     url: "https://tailwindcss.com/",
     category: "frontend",
     tags: ["css", "framework", "design"],
-    rating: 4.9,
+    rating: 4.7,
   },
   {
     id: "nextjs",
@@ -149,7 +149,7 @@ export async function fetchTopRatedTools(
       name: "Tailwind CSS",
       description:
         "A utility-first CSS framework for rapidly building custom user interfaces",
-      rating: 4.9,
+      rating: 4.7,
       tags: ["css", "framework", "design"],
       url: "https://tailwindcss.com",
       category: "frontend",
@@ -182,7 +182,7 @@ export async function fetchTopRatedTools(
       name: "TypeScript",
       description:
         "A typed superset of JavaScript that compiles to plain JavaScript, adding static type definitions",
-      rating: 4.6,
+      rating: 4.9,
       tags: ["language", "javascript", "static-typing"],
       url: "https://www.typescriptlang.org",
       category: "frontend",

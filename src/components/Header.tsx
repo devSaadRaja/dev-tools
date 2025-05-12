@@ -39,6 +39,12 @@ export default function Header() {
             Submit Tool
           </Link>
           <Link
+            href="/roadmap"
+            className="font-urbanist text-silver transition-colors hover:text-snow"
+          >
+            Roadmap
+          </Link>
+          <Link
             href="/about"
             className="font-urbanist text-silver transition-colors hover:text-snow"
           >
@@ -105,6 +111,13 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Submit Tool
+            </Link>
+            <Link
+              href="/roadmap"
+              className="rounded-lg p-3 font-urbanist text-lg text-silver hover:bg-slate-800 hover:text-snow"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Roadmap
             </Link>
             <Link
               href="/about"
