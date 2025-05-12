@@ -82,10 +82,10 @@ export default function SubmitToolPage() {
               <Hexagon className="h-8 w-8 text-royalBlue" />
               <Hexagon className="h-8 w-8 text-royalBlue" />
             </div>
-            <h1 className="text-4xl font-bold text-royalBlue mb-4">
+            <h1 className="font-urbanist text-4xl font-bold bg-gradient-to-r from-royalBlue to-snow bg-clip-text text-transparent mb-4">
               Submit a Tool
             </h1>
-            <p className="text-silver text-lg max-w-xl">
+            <p className="font-urbanist text-silver text-lg max-w-xl">
               Share your favorite developer tools with the community. Help
               others discover resources that can improve their workflow.
             </p>
@@ -175,7 +175,7 @@ export default function SubmitToolPage() {
                 </Label>
                 <select
                   id="category"
-                  className="w-full bg-background border border-border rounded-md p-2 text-snow"
+                  className="font-urbanist w-full bg-background border border-border rounded-md p-2 text-snow"
                   {...register("category")}
                 >
                   <option value="">Select a category</option>
@@ -206,7 +206,7 @@ export default function SubmitToolPage() {
                   className="bg-background border-border text-snow font-source-code-pro text-sm"
                   {...register("tags")}
                 />
-                <p className="text-silver text-sm">
+                <p className="font-urbanist text-silver text-sm">
                   Add relevant tags to help users find this tool more easily
                 </p>
               </div>
@@ -214,7 +214,7 @@ export default function SubmitToolPage() {
               <div className="pt-4">
                 <Button
                   type="submit"
-                  className="w-full bg-royalBlue hover:bg-royalBlue/90 text-snow font-medium py-2.5"
+                  className="font-urbanist w-full bg-royalBlue hover:bg-royalBlue/90 text-snow font-medium py-2.5"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Submitting..." : "Submit Tool"}

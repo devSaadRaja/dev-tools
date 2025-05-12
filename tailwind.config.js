@@ -9,7 +9,7 @@ const config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/ui/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: ["class", "class"], // or 'media' or 'class'
+  darkMode: ["class"],
   theme: {
     container: {
       center: true,

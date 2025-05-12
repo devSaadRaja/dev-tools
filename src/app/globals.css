@@ -30,6 +30,8 @@
   --input: 0 0% 89.8%;
   --ring: 0 0% 3.9%;
   --radius: 0.5rem;
+  --font-primary: "Urbanist", sans-serif;
+  --font-secondary: "Source Code Pro", monospace;
 }
 
 .dark {
@@ -80,23 +82,24 @@
 body {
   background-color: #111827;
   color: #fffafa;
+  font-family: var(--font-primary);
 }
 
-.font-urbanist {
-  font-family: var(--font-urbanist);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
 }
 
-.font-source-code-pro {
-  font-family: var(--font-source-code-pro);
+p,
+span,
+a,
+button {
+  font-family: var(--font-secondary);
 }
-
-/* .font-urbanist {
-  font-family: "Urbanist";
-}
-
-.font-source-code-pro {
-  font-family: "Source Code Pro";
-} */
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
@@ -115,4 +118,11 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #4169e1;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--font-source-code-pro);
 }

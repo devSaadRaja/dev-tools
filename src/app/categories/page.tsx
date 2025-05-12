@@ -126,7 +126,7 @@ export default function CategoriesPage() {
     <div className="min-h-screen pb-16">
       <div className="container mx-auto px-4 py-12">
         <div className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#FFFAFA] font-urbanist">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-royalBlue to-snow bg-clip-text text-transparent py-2 font-urbanist">
             Browse Categories
           </h1>
           <p className="text-lg md:text-xl text-[#C0C0C0] max-w-3xl mx-auto font-urbanist">

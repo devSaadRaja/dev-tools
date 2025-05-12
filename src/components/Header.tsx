@@ -83,8 +83,8 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="fixed inset-0 top-16 z-40 bg-slate-900 p-4 md:hidden">
-          <nav className="flex flex-col gap-4">
+        <div className="fixed inset-0 top-16 z-40 p-4 md:hidden">
+          <nav className="flex flex-col gap-4 bg-[#121212] rounded-lg p-4">
             <Link
               href="/tools"
               className="rounded-lg p-3 font-urbanist text-lg text-silver hover:bg-slate-800 hover:text-snow"
