@@ -18,14 +18,14 @@ export default function FeaturedTools({ tools }: FeaturedToolsProps) {
     <section className="mb-16">
       <div className="mb-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="h-8 w-1 rounded-full bg-royal-blue"></div>
+          <div className="h-8 w-1 rounded-full bg-royalBlue"></div>
           <h2 className="font-urbanist text-2xl font-bold text-snow md:text-3xl">
             Featured Tools
           </h2>
         </div>
         <Button
           variant="ghost"
-          className="text-royal-blue hover:bg-royal-blue/10 hover:text-royal-blue"
+          className="text-royalBlue hover:bg-royalBlue/10 hover:text-royalBlue"
         >
           View All <ArrowUpRightIcon className="ml-1 h-4 w-4" />
         </Button>
@@ -35,13 +35,13 @@ export default function FeaturedTools({ tools }: FeaturedToolsProps) {
         {tools.map((tool) => (
           <Card
             key={tool.id}
-            className="group relative overflow-hidden border-slate-gray/20 bg-gradient-to-br from-[#1e2235] to-[#131620] transition-all duration-300 hover:border-royal-blue/50 hover:shadow-[0_0_30px_rgba(65,105,225,0.15)]"
+            className="group relative overflow-hidden border-slate-gray/20 bg-gradient-to-br from-[#1e2235] to-[#131620] transition-all duration-300 hover:border-royalBlue/50 hover:shadow-[0_0_30px_rgba(65,105,225,0.15)]"
           >
             {tool.rating >= 4.7 && (
               <div className="absolute right-0 top-0">
-                <div className="flex items-center gap-1 rounded-bl-lg bg-royal-blue/20 px-3 py-1 backdrop-blur-sm">
-                  <TrendingUpIcon className="h-3 w-3 text-royal-blue" />
-                  <span className="text-xs font-medium text-royal-blue">
+                <div className="flex items-center gap-1 rounded-bl-lg bg-royalBlue/20 px-3 py-1 backdrop-blur-sm">
+                  <TrendingUpIcon className="h-3 w-3 text-royalBlue" />
+                  <span className="text-xs font-medium text-royalBlue">
                     Trending
                   </span>
                 </div>
@@ -60,9 +60,9 @@ export default function FeaturedTools({ tools }: FeaturedToolsProps) {
                         key={i}
                         className={`h-4 w-4 ${
                           i < Math.floor(tool.rating)
-                            ? "fill-royal-blue text-royal-blue"
+                            ? "fill-royalBlue text-royalBlue"
                             : i < tool.rating
-                            ? "fill-royal-blue/50 text-royal-blue/50"
+                            ? "fill-royalBlue/50 text-royalBlue/50"
                             : "fill-none text-slate-gray/30"
                         }`}
                       />
@@ -73,8 +73,8 @@ export default function FeaturedTools({ tools }: FeaturedToolsProps) {
                   </div>
                 </div>
                 <div className="h-10 w-10 overflow-hidden rounded-lg bg-gradient-to-br from-slate-800 to-slate-900 p-2">
-                  <div className="h-full w-full rounded-md bg-royal-blue/20 p-1">
-                    <div className="h-full w-full rounded bg-royal-blue/30"></div>
+                  <div className="h-full w-full rounded-md bg-royalBlue/20 p-1">
+                    <div className="h-full w-full rounded bg-royalBlue/30"></div>
                   </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default function FeaturedTools({ tools }: FeaturedToolsProps) {
             <CardFooter className="pt-0">
               <Button
                 variant="outline"
-                className="w-full border-slate-gray/30 bg-transparent font-urbanist text-royal-blue transition-all hover:border-royal-blue hover:bg-royal-blue/10"
+                className="w-full border-slate-gray/30 bg-transparent font-urbanist text-royalBlue transition-all hover:border-royalBlue hover:bg-royalBlue/10"
               >
                 View Details <ArrowUpRightIcon className="ml-2 h-4 w-4" />
               </Button>

@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-1">
             <Link href="/" className="mb-4 flex items-center gap-2">
-              <HexagonIcon className="h-6 w-6 text-royal-blue" />
+              <HexagonIcon className="h-6 w-6 text-royalBlue" />
               <span className="font-urbanist text-xl font-bold text-snow">
                 DevTools
               </span>
@@ -18,13 +18,13 @@ export default function Footer() {
               build better software.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-silver hover:text-royal-blue">
+              <a href="#" className="text-silver hover:text-royalBlue">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="text-silver hover:text-royal-blue">
+              <a href="#" className="text-silver hover:text-royalBlue">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-silver hover:text-royal-blue">
+              <a href="#" className="text-silver hover:text-royalBlue">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
@@ -39,7 +39,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/tools"
-                    className="text-silver/80 transition-colors hover:text-royal-blue"
+                    className="text-silver/80 transition-colors hover:text-royalBlue"
                   >
                     All Tools
                   </Link>
@@ -47,7 +47,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/categories"
-                    className="text-silver/80 transition-colors hover:text-royal-blue"
+                    className="text-silver/80 transition-colors hover:text-royalBlue"
                   >
                     Categories
                   </Link>
@@ -55,7 +55,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/submit"
-                    className="text-silver/80 transition-colors hover:text-royal-blue"
+                    className="text-silver/80 transition-colors hover:text-royalBlue"
                   >
                     Submit Tool
                   </Link>
@@ -63,7 +63,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/about"
-                    className="text-silver/80 transition-colors hover:text-royal-blue"
+                    className="text-silver/80 transition-colors hover:text-royalBlue"
                   >
                     About
                   </Link>
@@ -79,7 +79,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/categories/frontend"
-                    className="text-silver/80 transition-colors hover:text-royal-blue"
+                    className="text-silver/80 transition-colors hover:text-royalBlue"
                   >
                     Frontend
                   </Link>
@@ -87,7 +87,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/categories/backend"
-                    className="text-silver/80 transition-colors hover:text-royal-blue"
+                    className="text-silver/80 transition-colors hover:text-royalBlue"
                   >
                     Backend
                   </Link>
@@ -95,7 +95,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/categories/devops"
-                    className="text-silver/80 transition-colors hover:text-royal-blue"
+                    className="text-silver/80 transition-colors hover:text-royalBlue"
                   >
                     DevOps
                   </Link>
@@ -103,7 +103,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/categories/ai-tools"
-                    className="text-silver/80 transition-colors hover:text-royal-blue"
+                    className="text-silver/80 transition-colors hover:text-royalBlue"
                   >
                     AI Tools
                   </Link>
@@ -119,7 +119,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/privacy"
-                    className="text-silver/80 transition-colors hover:text-royal-blue"
+                    className="text-silver/80 transition-colors hover:text-royalBlue"
                   >
                     Privacy Policy
                   </Link>
@@ -127,7 +127,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/terms"
-                    className="text-silver/80 transition-colors hover:text-royal-blue"
+                    className="text-silver/80 transition-colors hover:text-royalBlue"
                   >
                     Terms of Service
                   </Link>
@@ -135,7 +135,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/cookies"
-                    className="text-silver/80 transition-colors hover:text-royal-blue"
+                    className="text-silver/80 transition-colors hover:text-royalBlue"
                   >
                     Cookie Policy
                   </Link>

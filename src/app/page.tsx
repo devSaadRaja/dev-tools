@@ -23,16 +23,16 @@ export default function HomePage() {
       <div className="container relative z-10 mx-auto px-4 py-8">
         {/* Hero Section */}
         <section className="relative mb-16 overflow-hidden rounded-3xl bg-gradient-to-br from-[#1e2235] to-[#131620] p-8 text-center shadow-2xl md:p-12">
-          <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-royal-blue/10 blur-3xl"></div>
-          <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-royal-blue/10 blur-3xl"></div>
+          <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-royalBlue/10 blur-3xl"></div>
+          <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-royalBlue/10 blur-3xl"></div>
 
           <div className="relative z-10">
             <div className="mb-6 flex items-center justify-center gap-2">
-              <HexagonIcon className="h-8 w-8 text-royal-blue" />
-              <h1 className="bg-gradient-to-r from-royal-blue to-snow bg-clip-text font-urbanist text-4xl font-bold text-transparent md:text-5xl lg:text-6xl">
+              <HexagonIcon className="h-8 w-8 text-royalBlue" />
+              <h1 className="bg-gradient-to-r from-royalBlue to-snow bg-clip-text font-urbanist text-4xl font-bold text-transparent md:text-5xl lg:text-6xl">
                 DevTools Directory
               </h1>
-              <HexagonIcon className="h-8 w-8 text-royal-blue" />
+              <HexagonIcon className="h-8 w-8 text-royalBlue" />
             </div>
 
             <p className="mx-auto mb-8 max-w-2xl font-urbanist text-lg text-silver">

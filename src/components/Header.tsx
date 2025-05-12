@@ -12,7 +12,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-gray/10 backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-center gap-2">
-          <HexagonIcon className="h-6 w-6 text-royal-blue" />
+          <HexagonIcon className="h-6 w-6 text-royalBlue" />
           <span className="font-urbanist text-xl font-bold text-snow">
             DevTools
           </span>
@@ -61,7 +61,7 @@ export default function Header() {
           >
             <Twitter className="h-5 w-5" />
           </Button>
-          <Button className="bg-royal-blue font-urbanist text-snow hover:bg-royal-blue/90">
+          <Button className="bg-royalBlue font-urbanist text-snow hover:bg-royalBlue/90">
             Sign In
           </Button>
         </div>
@@ -129,7 +129,7 @@ export default function Header() {
                 <Twitter className="h-5 w-5" />
               </Button>
               <Button
-                className="flex-1 bg-royal-blue font-urbanist text-snow hover:bg-royal-blue/90"
+                className="flex-1 bg-royalBlue font-urbanist text-snow hover:bg-royalBlue/90"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sign In

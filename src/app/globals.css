@@ -69,11 +69,11 @@
   }
 
   .font-urbanist {
-    font-family: var(--font-urbanist), sans-serif;
+    font-family: var(--font-urbanist);
   }
 
   .font-source-code-pro {
-    font-family: var(--font-source-code-pro), monospace;
+    font-family: var(--font-source-code-pro);
   }
 }
 
@@ -83,12 +83,20 @@ body {
 }
 
 .font-urbanist {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-urbanist);
 }
 
 .font-source-code-pro {
-  font-family: "Source Code Pro", monospace;
+  font-family: var(--font-source-code-pro);
 }
+
+/* .font-urbanist {
+  font-family: "Urbanist";
+}
+
+.font-source-code-pro {
+  font-family: "Source Code Pro";
+} */
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {

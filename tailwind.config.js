@@ -25,11 +25,12 @@ const config = {
       },
       colors: {
         // Custom colors based on project requirements
-        "royal-blue": "#4169E1",
+        royalBlue: "#4169E1",
         silver: "#C0C0C0",
         snow: "#FFFAFA",
         "slate-gray": "#708090",
         "slate-900": "#0f1219",
+        "card-bg": "#1A1F2E",
 
         // ShadCN UI colors
         border: "hsl(var(--border))",

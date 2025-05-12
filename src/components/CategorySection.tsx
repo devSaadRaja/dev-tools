@@ -10,7 +10,7 @@ export default function CategorySection({ categories }: CategorySectionProps) {
   return (
     <section className="mb-16">
       <div className="mb-8 flex items-center gap-2">
-        <div className="h-8 w-1 rounded-full bg-royal-blue"></div>
+        <div className="h-8 w-1 rounded-full bg-royalBlue"></div>
         <h2 className="font-urbanist text-2xl font-bold text-snow md:text-3xl">
           Browse by Category
         </h2>
@@ -20,10 +20,10 @@ export default function CategorySection({ categories }: CategorySectionProps) {
         {categories.map((category) => (
           <Card
             key={category.id}
-            className="group overflow-hidden border-slate-gray/20 bg-gradient-to-br from-[#1e2235] to-[#131620] transition-all duration-300 hover:border-royal-blue/50 hover:shadow-[0_0_30px_rgba(65,105,225,0.15)]"
+            className="group overflow-hidden border-slate-gray/20 bg-gradient-to-br from-[#1e2235] to-[#131620] transition-all duration-300 hover:border-royalBlue/50 hover:shadow-[0_0_30px_rgba(65,105,225,0.15)]"
           >
             <CardContent className="p-6">
-              <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-royal-blue/10 text-royal-blue transition-all group-hover:bg-royal-blue/20">
+              <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-royalBlue/10 text-royalBlue transition-all group-hover:bg-royalBlue/20">
                 <FolderIcon className="h-6 w-6" />
               </div>
               <h3 className="mb-1 font-urbanist text-lg font-bold text-snow">
@@ -40,7 +40,7 @@ export default function CategorySection({ categories }: CategorySectionProps) {
             <CardFooter className="border-t border-slate-gray/10 bg-slate-900/20 p-0">
               <a
                 href={`/categories/${category.id}`}
-                className="flex w-full items-center justify-between p-4 font-urbanist text-sm text-royal-blue transition-all hover:bg-royal-blue/5"
+                className="flex w-full items-center justify-between p-4 font-urbanist text-sm text-royalBlue transition-all hover:bg-royalBlue/5"
               >
                 <span>Browse Category</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

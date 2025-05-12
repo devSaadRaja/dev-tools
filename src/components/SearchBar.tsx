@@ -47,8 +47,8 @@ export default function SearchBar() {
   return (
     <div className="mx-auto w-full max-w-3xl">
       <div className="relative">
-        <div className="group relative flex overflow-hidden rounded-xl border-2 border-slate-gray/30 bg-slate-900/50 backdrop-blur-sm transition-all focus-within:border-royal-blue">
-          <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-gray transition-all group-focus-within:text-royal-blue" />
+        <div className="group relative flex overflow-hidden rounded-xl border-2 border-slate-gray/30 bg-slate-900/50 backdrop-blur-sm transition-all focus-within:border-royalBlue">
+          <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-gray transition-all group-focus-within:text-royalBlue" />
           <Input
             type="text"
             placeholder="Search for tools and resources..."
@@ -67,7 +67,7 @@ export default function SearchBar() {
             </button>
           )}
           <Button
-            className="m-1 bg-royal-blue px-6 font-urbanist text-snow transition-all hover:bg-royal-blue/90"
+            className="m-1 bg-royalBlue px-6 font-urbanist text-snow transition-all hover:bg-royalBlue/90"
             aria-label="Search"
             disabled={isSearching}
           >
@@ -86,9 +86,9 @@ export default function SearchBar() {
           <Badge
             key={filter}
             variant="outline"
-            className={`cursor-pointer border border-slate-gray/30 font-source-code-pro text-xs transition-all hover:border-royal-blue hover:bg-royal-blue/10 ${
+            className={`cursor-pointer border border-slate-gray/30 font-source-code-pro text-xs transition-all hover:border-royalBlue hover:bg-royalBlue/10 ${
               selectedFilters.includes(filter)
-                ? "border-royal-blue bg-royal-blue/10 text-royal-blue"
+                ? "border-royalBlue bg-royalBlue/10 text-royalBlue"
                 : "bg-transparent text-silver"
             }`}
             onClick={() => toggleFilter(filter)}
