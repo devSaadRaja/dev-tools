@@ -9,7 +9,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-gray/10 bg-slate-900/80 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 border-b border-slate-gray/10 backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-center gap-2">
           <HexagonIcon className="h-6 w-6 text-royal-blue" />
