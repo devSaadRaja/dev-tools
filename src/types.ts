@@ -8,6 +8,7 @@ export interface Tool {
   rating: number;
   submittedBy?: string;
   submittedDate?: string;
+  trending?: boolean;
 }
 
 export interface Category {
