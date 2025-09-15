@@ -24,7 +24,7 @@ export default async function TopRatedPage({
   return (
     <div className="container min-h-screen mx-auto px-4 py-12">
       <div className="mb-12 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-royalBlue to-snow bg-clip-text text-transparent  font-urbanist">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 gradient-text font-urbanist">
           Developer Tools Directory
         </h1>
         <p className="text-[#C0C0C0] text-lg md:text-xl max-w-3xl mx-auto font-urbanist">

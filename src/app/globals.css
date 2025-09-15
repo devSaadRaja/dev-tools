@@ -77,6 +77,14 @@
   .font-source-code-pro {
     font-family: var(--font-source-code-pro);
   }
+
+  .gradient-text {
+    color: #4169E1;
+    background: linear-gradient(to right, #4169E1, #FFFAFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }
 
 body {

@@ -82,7 +82,7 @@ export default function SubmitToolPage() {
               <Hexagon className="h-8 w-8 text-royalBlue" />
               <Hexagon className="h-8 w-8 text-royalBlue" />
             </div>
-            <h1 className="font-urbanist text-4xl font-bold bg-gradient-to-r from-royalBlue to-snow bg-clip-text text-transparent mb-4">
+            <h1 className="font-urbanist text-4xl font-bold gradient-text mb-4">
               Submit a Tool
             </h1>
             <p className="font-urbanist text-silver text-lg max-w-xl">

@@ -11,7 +11,7 @@ export default function AboutPage() {
             <div className="h-10 w-10 text-[#4169E1]">
               <Code className="h-10 w-10" />
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-royalBlue to-snow bg-clip-text text-transparent mx-2">
+            <h1 className="text-3xl md:text-5xl font-bold gradient-text mx-2">
               About DevTools Directory
             </h1>
             <div className="h-10 w-10 text-[#4169E1]">

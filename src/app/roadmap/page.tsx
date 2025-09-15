@@ -141,7 +141,7 @@ export default function Roadmap() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 sm:mb-8 gap-2">
         <div className="flex items-center gap-2">
           <Hexagon className="h-5 w-5 sm:h-6 sm:w-6 text-[#4169E1]" />
-          <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-royalBlue to-snow bg-clip-text text-transparent font-urbanist">
+          <h1 className="text-2xl sm:text-3xl font-bold gradient-text font-urbanist">
             Development Roadmap
           </h1>
         </div>

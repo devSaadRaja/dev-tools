@@ -29,7 +29,7 @@ export default function HomePage() {
           <div className="relative z-10">
             <div className="mb-6 flex items-center justify-center gap-2">
               <HexagonIcon className="h-8 w-8 text-royalBlue" />
-              <h1 className="bg-gradient-to-r from-royalBlue to-snow bg-clip-text font-urbanist text-4xl font-bold text-transparent md:text-5xl lg:text-6xl">
+              <h1 className="gradient-text font-urbanist text-4xl font-bold md:text-5xl lg:text-6xl">
                 DevTools Directory
               </h1>
               <HexagonIcon className="h-8 w-8 text-royalBlue" />

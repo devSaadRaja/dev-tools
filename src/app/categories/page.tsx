@@ -126,7 +126,7 @@ export default function CategoriesPage() {
     <div className="min-h-screen pb-16">
       <div className="container mx-auto px-4 py-12">
         <div className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-royalBlue to-snow bg-clip-text text-transparent py-2 font-urbanist">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 gradient-text py-2 font-urbanist">
             Browse Categories
           </h1>
           <p className="text-lg md:text-xl text-[#C0C0C0] max-w-3xl mx-auto font-urbanist">
@@ -142,7 +142,7 @@ export default function CategoriesPage() {
               key={category.id}
               className="group"
             >
-              <div className="h-full border border-[#4169E1]/60 rounded-lg p-6 transition-all duration-300 hover:border-[#4169E1] hover:shadow-lg hover:shadow-[#4169E1]/10">
+              <div className="h-full bg-card-bg border border-[#4169E1]/60 rounded-lg p-6 transition-all duration-300 hover:border-[#4169E1] hover:shadow-lg hover:shadow-[#4169E1]/10">
                 <div className="flex flex-col h-full">
                   <div className="mb-4">{category.icon}</div>
                   <div className="mb-2 flex items-center justify-between">
